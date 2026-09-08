@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        maven { url = "https://maven.fabricmc.net/" }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+
+    def props = gradle.startParameter.projectProperties
+    def modern = props.get("modern_minecraft", "false").toBoolean()
+
+    plugins {
+        if (modern) {
+            id "net.fabricmc.fabric-loom" version props.get("loom_version", "1.17-SNAPSHOT")
+        } else {
+            id "net.fabricmc.fabric-loom-remap" version props.get("loom_version", "1.14")
+        }
+    }
+}
+
+rootProject.name = "FastChunks"

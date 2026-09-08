@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fastchunks",
+  "version": "${version}",
+  "name": "FastChunks",
+  "description": "Client-side adaptive render and chunk-processing optimization for smoother exploration.",
+  "authors": ["HarbourPVP"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.harbourpvp.fastchunks.FastChunksClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "${minecraft_version}"
+  }
+}
