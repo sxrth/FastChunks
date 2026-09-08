@@ -1,0 +1,11 @@
+{
+  "project_type": "mod",
+  "loaders": ["fabric"],
+  "client_side": "required",
+  "server_side": "unsupported",
+  "license": "MIT",
+  "title": "FastChunks",
+  "slug": "fastchunks",
+  "summary": "Adaptive client-side chunk loading optimization for smoother exploration.",
+  "categories": ["optimization", "utility"]
+}
